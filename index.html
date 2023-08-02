@@ -400,7 +400,7 @@
         <form action="" class="footer__form">
           <input type="email" name="email" class="footer__input" placeholder="E-mail">
           <button class="footer__form-button">Subscribe
-            <svg class="footer__botton-svg" width="24" height="24" >
+            <svg class="footer__botton-svg" width="24" height="24">
               <use href="./images/icons.svg#icon-telega"></use>
             </svg>
           </button>
@@ -421,43 +421,52 @@
       <p class="modal__title">
         Leave your contacts and we will call you back
       </p>
-      <form class="modal__form" name="contact" autocomplete="off" novalidate>
-        <label class="modal__form-lable">
-          Name
+      <form class="modal__form" namce="contact" autocomplete="off" novalidate>
+        <div lass="modal__lable-wrap">
+          <label for="user-name" class="modal__form-lable">Name</label>
           <div class="modal__input-wrap">
+            <input id="user-name" class="modal__form-input" type="text" name="user-mame" />
             <svg class="modal__icons" width="18" height="24">
               <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
             </svg>
-            <input class="modal__form-input" type="text" name="user-mame" />
           </div>
-        </label>
-        <label class="modal__form-lable">
-          Phone
+        </div>
+        <div class="modal__lable-wrap">
+          <label for="phone" class="modal__form-lable">Phone</label>
           <div class="modal__input-wrap">
+            <input id="phone" class="modal__form-input" type="tel" name="phone" placeholder="" />
             <svg class="modal__icons" width="18" height="24">
               <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
             </svg>
-            <input class="modal__form-input" type="tel" name="phone" placeholder="" />
           </div>
-        </label>
-        <label class="modal__form-lable">
-          Email
-          <div class="modal__input-wrap">
-            <svg class="modal__icons" width="18" height="24">
-              <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
-            </svg>
-            <input class="modal__form-input" type="email" name="emeil" />
-          </div>
-        </label>
-        <label class="modal__form-lable">
-          Comment
-          <textarea class="modal__form-input" type="text" name="desc" rows="5" placeholder="Text input"></textarea>
-        </label>
-        <label class="modal__checkbox-lable">
-          <input class="modal__checkbox-text" type="checkbox" name="hobby" value="I-accept" checked />
-          I accept the terms and conditions of the <br />
-          <a class="modal__form-link"> Privacy Policy</a>
-        </label>
+        </div>
+        <div class="modal__lable-wrap">
+          <label for="email" class="modal__form-lable"> Email </label>
+            <div class="modal__input-wrap">
+              <input id="email" class="modal__form-input" type="email" name="emeil" />
+              <svg class="modal__icons" width="18" height="24">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+            </div>
+        </div>
+        <div class="modal__lable-wrap">
+          <label for="user-comment" class="modal__form-lable">Comment</label>
+            <textarea id="user-comment" class="modal__form-input modal__form-comment" type="text" name="user-comment" rows="5" placeholder="Text input"></textarea>
+        </div>
+        <div class="modal__checkbox-wrap">
+          
+            <input id="user-privacy" class="modal__input-checkbox" type="checkbox" name="user-privacy"  value="true" checked />
+            
+            <label for="user-privacy" class="modal__checkbox-lable">
+              <span class="modal__checkbox">
+                <svg class="modal__checkbox__icons" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkmark"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+            </label>
+          
+        </div>
         <button class="modal__form-button hero-image__button" type="submit">
           Send
         </button>
