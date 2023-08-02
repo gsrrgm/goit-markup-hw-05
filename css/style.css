@@ -568,7 +568,6 @@ address {
     color: var(--light-slate);
     display: flex;
     align-items: center;
-    justify-content: center;
     border-radius: 4px;
     border: 1px solid var(--lightslate, #8E8F99);
     width: 100%;
@@ -890,7 +889,7 @@ address {
 .modal__form-input:hover,
 .modal__input-icon:focus,
 .modal__form-input:focus {
-    fill: var(--primary-brand) #4D5AE5; 
+    fill: var(--primary-brand, #4D5AE5); 
     color: var(--pressed-state);
     border-color: var(--primary-brand, #4D5AE5);
 }
