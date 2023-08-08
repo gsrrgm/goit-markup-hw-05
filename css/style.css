@@ -865,15 +865,10 @@ address {
 .modal__form-lable:focus {
     color: var(--pressed-state);
 
+
 }
 
-.modal__form-input:focus-within {
-    border-color: var(--pressed-state);
-}
 
-.modal__form-lable:focus-within {
-    border-color: var(--pressed-state);
-}
 
 .modal__form-input {
     padding-left: 38px;
@@ -888,12 +883,13 @@ address {
     /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
-.modal__form-input:hover,
-.modal__input-icon:focus,
+.modal__form-input:hover {
+    fill: var(--primary-brand); 
+    border-color: var(--primary-brand);
+}
 .modal__form-input:focus {
-    fill: var(--primary-brand, #4D5AE5); 
-    color: var(--pressed-state);
-    border-color: var(--primary-brand, #4D5AE5);
+    fill: var(--primary-brand); 
+    border-color: var(--primary-brand);
 }
 
 .modal__form-comment {
@@ -1001,16 +997,16 @@ input[type="checkbox"]:checked + .modal__checkbox {
     left: 16px;
 }
 
-.modal__form-input {}
-
-.modal__icons:hover,
 .modal__icons:focus {
     fill: currentColor;
+
 }
 
-.modal__input-wrap:focus,
+.modal__input-wrap:focus {
+    fill: var(--primary-brand);
+}
 .modal__input-wrap:hover {
-    fill: var(--pressed-state);
+    fill: var(--primary-brand);
 }
 
 /* .modal__input-wrap:focus-within {
