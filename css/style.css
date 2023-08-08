@@ -978,6 +978,7 @@ input[type="checkbox"]:checked + .modal__checkbox {
 .modal__form-lable:hover,
 .modal__form-lable:focus {
     color: var(--pressed-state);
+    fill: var(--primary-brand);
 }
 
 .modal__input-wrap:hover,
