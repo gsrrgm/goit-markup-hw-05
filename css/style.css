@@ -688,6 +688,7 @@ address {
 .footer__form {
     display: flex;
     align-items: center;
+    gap: 24px;
 }
 
 .footer__input {
@@ -911,7 +912,7 @@ address {
 }
 .modal__input-checkbox:checked + .modal__checkbox-lable .modal__checkbox {
     background-color: var(--pressed-state);
-    bottom: none;
+    border: none;
     fill: var(--light);
 }
 
