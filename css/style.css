@@ -941,12 +941,6 @@ address {
 
 .modal__checkbox-icons {}
 
-input[type="checkbox"]:checked  + span.modal__checkbox {
-    background-color: var(--pressed-state);
-    fill: var(--light);
-    border: none;
-}
-
 .modal__checkbox-link {
     color: var(--iris, #4D5AE5);
     font-family: Roboto;
